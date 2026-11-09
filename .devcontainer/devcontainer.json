@@ -1,0 +1,16 @@
+{
+  "name": "Playwright Test Ortami",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "remoteEnv": {
+    "DISPLAY": ":1"
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "noVNC Desktop",
+      "onAutoForward": "silent",
+      "visibility": "public"
+    }
+  },
+  "postStartCommand": "nohup ./start-vnc.sh > /tmp/vnc.log 2>&1 &"
+}

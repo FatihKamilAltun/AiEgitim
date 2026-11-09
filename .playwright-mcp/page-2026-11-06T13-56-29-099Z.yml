@@ -1,0 +1,18 @@
+- generic [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - text: This is just a demo of TodoMVC for testing, not the
+    - link "real TodoMVC app." [ref=f2e3] [cursor=pointer]:
+      - /url: https://todomvc.com/
+  - generic [ref=f2e6]:
+    - heading "todos" [level=1] [ref=f2e7]
+    - textbox "What needs to be done?" [active] [ref=f2e8]
+  - contentinfo [ref=f2e9]:
+    - paragraph [ref=f2e10]: Double-click to edit a todo
+    - paragraph [ref=f2e11]:
+      - text: Created by
+      - link "Remo H. Jansen" [ref=f2e12] [cursor=pointer]:
+        - /url: http://github.com/remojansen/
+    - paragraph [ref=f2e13]:
+      - text: Part of
+      - link "TodoMVC" [ref=f2e14] [cursor=pointer]:
+        - /url: http://todomvc.com

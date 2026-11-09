@@ -1,0 +1,8 @@
+{
+  "playwright.env": {
+    "DISPLAY": ":1"
+  },
+  "terminal.integrated.env.linux": {
+    "DISPLAY": ":1"
+  }
+}

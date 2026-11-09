@@ -1,3 +1,6 @@
+// VS Code eklentisi veya worker çalıştığında DISPLAY değerini zorunlu kıl
+process.env.DISPLAY = process.env.DISPLAY || ':1';
+
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -25,11 +28,12 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    headless: true,
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    /* Attach a trace to every test result for the HTML report. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on',
   },
 
   /* Configure projects for major browsers */
